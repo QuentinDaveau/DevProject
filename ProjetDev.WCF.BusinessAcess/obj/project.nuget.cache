@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "rj91x7jSVqZjKTwmdD2XBHeRjsyK3EbDTQC8oLMtAEJFtYjpRJBPeAzh9IXI8K2UXNbwcBpw/g6xeA40LbMrfQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\davea\\source\\repos\\ProjetDev\\ProjetDev.WCF.BusinessAcess\\ProjetDev.WCF.Business.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\davea\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\davea\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
