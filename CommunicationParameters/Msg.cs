@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjetDev.WCF.Service
+namespace ProjetDev.WCF.CommunicationParameters
 {
     // Contrat de données de message de base qui va être utilisé dans l'entièreté de l'application
     [DataContract]
@@ -19,6 +19,7 @@ namespace ProjetDev.WCF.Service
         string tokenUser;
         string appVersion;
         string operationVersion;
+        string operationType;
 
         [DataMember]
         public bool StatutOp { get => statutOp; set => statutOp = value; }
@@ -26,6 +27,8 @@ namespace ProjetDev.WCF.Service
         public string Info { get => info; set => info = value; }
         [DataMember]
         public object[] Data { get => data; set => data = value; }
+        [DataMember]
+        public string OperationType { get => operationType; set => operationType = value; }
         [DataMember]
         public string OperationName { get => operationName; set => operationName = value; }
         [DataMember]

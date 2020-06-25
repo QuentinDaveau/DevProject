@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ProjetDev.WCF.CommunicationParameters;
+using ProjetDev.WCF.RequestManagment;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -9,15 +11,16 @@ namespace ProjetDev.WCF.Service
 {
     public class RequestService : IRequestService
     {
-        // A compléter avec les éléments de la couche inférieure
-        public RequestService()
+        private readonly RequestManager requestManager;
+        public RequestService(RequestManager requestManager)
         {
-
+            this.requestManager = requestManager;
         }
+
 
         public Msg Request(Msg message)
         {
-            throw new NotImplementedException();
+            return requestManager.ProcessMessage(message);
         }
     }
 }

@@ -5,11 +5,12 @@ using System.Text;
 
 namespace ProjetDev.WCF.Business
 {
-    public class QueryManager : IMessageReceiver
+    class LoginManager : IMessageReceiver
     {
         public Msg ProcessMessage(Msg message)
         {
-            throw new NotImplementedException();
+            // Gère le login
+            return message;
         }
     }
 }

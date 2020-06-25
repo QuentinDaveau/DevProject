@@ -45,14 +45,18 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Singleton.cs" />
+    <Compile Include="FactorySingleton.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CommunicationParameters\ProjetDev.WCF.CommunicationParameters.csproj">
+      <Project>{b883e88f-92ac-4704-abe8-d61d6a7372ba}</Project>
+      <Name>ProjetDev.WCF.CommunicationParameters</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ProjetDev.WCF.BusinessAcess\ProjetDev.WCF.Business.csproj">
-      <Project>{F06C18BC-62D7-419A-893C-C4EE5DB8512C}</Project>
+      <Project>{f06c18bc-62d7-419a-893c-c4ee5db8512c}</Project>
       <Name>ProjetDev.WCF.Business</Name>
     </ProjectReference>
     <ProjectReference Include="..\RequestManagment\ProjetDev.WCF.RequestManagment.csproj">
@@ -60,7 +64,7 @@
       <Name>ProjetDev.WCF.RequestManagment</Name>
     </ProjectReference>
     <ProjectReference Include="..\RequestService\ProjetDev.WCF.Service.csproj">
-      <Project>{A11B279F-3457-4662-8032-05328F254915}</Project>
+      <Project>{a11b279f-3457-4662-8032-05328f254915}</Project>
       <Name>ProjetDev.WCF.Service</Name>
     </ProjectReference>
   </ItemGroup>

@@ -25,6 +25,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "ProjetDev.WCF.CommunicationParameters/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/ProjetDev.WCF.CommunicationParameters.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProjetDev.WCF.CommunicationParameters.dll": {}
+        }
       }
     }
   },
@@ -172,11 +182,17 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "ProjetDev.WCF.CommunicationParameters/1.0.0": {
+      "type": "project",
+      "path": "../CommunicationParameters/ProjetDev.WCF.CommunicationParameters.csproj",
+      "msbuildProject": "../CommunicationParameters/ProjetDev.WCF.CommunicationParameters.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.3"
+      "NETStandard.Library >= 2.0.3",
+      "ProjetDev.WCF.CommunicationParameters >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -204,7 +220,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\davea\\source\\repos\\ProjetDev\\CommunicationParameters\\ProjetDev.WCF.CommunicationParameters.csproj": {
+              "projectPath": "C:\\Users\\davea\\source\\repos\\ProjetDev\\CommunicationParameters\\ProjetDev.WCF.CommunicationParameters.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -25,29 +25,6 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
-      },
-      "ProjetDev.WCF.Business/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "ProjetDev.WCF.CommunicationParameters": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/ProjetDev.WCF.Business.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ProjetDev.WCF.Business.dll": {}
-        }
-      },
-      "ProjetDev.WCF.CommunicationParameters/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/ProjetDev.WCF.CommunicationParameters.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ProjetDev.WCF.CommunicationParameters.dll": {}
-        }
       }
     }
   },
@@ -195,23 +172,11 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
-    },
-    "ProjetDev.WCF.Business/1.0.0": {
-      "type": "project",
-      "path": "../ProjetDev.WCF.BusinessAcess/ProjetDev.WCF.Business.csproj",
-      "msbuildProject": "../ProjetDev.WCF.BusinessAcess/ProjetDev.WCF.Business.csproj"
-    },
-    "ProjetDev.WCF.CommunicationParameters/1.0.0": {
-      "type": "project",
-      "path": "../CommunicationParameters/ProjetDev.WCF.CommunicationParameters.csproj",
-      "msbuildProject": "../CommunicationParameters/ProjetDev.WCF.CommunicationParameters.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.3",
-      "ProjetDev.WCF.Business >= 1.0.0",
-      "ProjetDev.WCF.CommunicationParameters >= 1.0.0"
+      "NETStandard.Library >= 2.0.3"
     ]
   },
   "packageFolders": {
@@ -220,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\davea\\source\\repos\\ProjetDev\\RequestManagment\\ProjetDev.WCF.RequestManagment.csproj",
-      "projectName": "ProjetDev.WCF.RequestManagment",
-      "projectPath": "C:\\Users\\davea\\source\\repos\\ProjetDev\\RequestManagment\\ProjetDev.WCF.RequestManagment.csproj",
+      "projectUniqueName": "C:\\Users\\davea\\source\\repos\\ProjetDev\\CommunicationParameters\\ProjetDev.WCF.CommunicationParameters.csproj",
+      "projectName": "ProjetDev.WCF.CommunicationParameters",
+      "projectPath": "C:\\Users\\davea\\source\\repos\\ProjetDev\\CommunicationParameters\\ProjetDev.WCF.CommunicationParameters.csproj",
       "packagesPath": "C:\\Users\\davea\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\davea\\source\\repos\\ProjetDev\\RequestManagment\\obj\\",
+      "outputPath": "C:\\Users\\davea\\source\\repos\\ProjetDev\\CommunicationParameters\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\davea\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -239,14 +204,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {
-            "C:\\Users\\davea\\source\\repos\\ProjetDev\\CommunicationParameters\\ProjetDev.WCF.CommunicationParameters.csproj": {
-              "projectPath": "C:\\Users\\davea\\source\\repos\\ProjetDev\\CommunicationParameters\\ProjetDev.WCF.CommunicationParameters.csproj"
-            },
-            "C:\\Users\\davea\\source\\repos\\ProjetDev\\ProjetDev.WCF.BusinessAcess\\ProjetDev.WCF.Business.csproj": {
-              "projectPath": "C:\\Users\\davea\\source\\repos\\ProjetDev\\ProjetDev.WCF.BusinessAcess\\ProjetDev.WCF.Business.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m/zTOoNqsj3OgQiEpavrzwC1KCMWDu0yUy/r9/XVG9dp6CTGaYZeLpMocmxbxDXvfl618bMi4XD5ZwUeyh+K/Q==",
+  "dgSpecHash": "p7y6uPNwBAZ9nbqLvSLELnjKPt4aTaPEiTcme4CeGDc+USRnnAxU6irTbk8df7iKcSmsAXom+Qq6aeDj1ZVcBQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\davea\\source\\repos\\ProjetDev\\RequestManagment\\ProjetDev.WCF.RequestManagment.csproj",
+  "projectFilePath": "C:\\Users\\davea\\source\\repos\\ProjetDev\\CommunicationParameters\\ProjetDev.WCF.CommunicationParameters.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\davea\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\davea\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
