@@ -15,6 +15,17 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
     <XsdCodeGenEnabled>True</XsdCodeGenEnabled>
+    <XsdCodeGenSerializerMode>XmlSerializer</XsdCodeGenSerializerMode>
+    <XsdCodeGenReuseTypesFlag>True</XsdCodeGenReuseTypesFlag>
+    <XsdCodeGenReuseTypesMode>All</XsdCodeGenReuseTypesMode>
+    <XsdCodeGenReferences />
+    <XsdCodeGenNamespaceMappings>%2a, ProjetDev.WCF.Service.ContractTypes</XsdCodeGenNamespaceMappings>
+    <XsdCodeGenCollectionTypes>System.Array%3bSystem.Collections.Generic.Dictionary`2</XsdCodeGenCollectionTypes>
+    <XsdCodeGenExcludedTypes />
+    <XsdCodeGenImportXmlTypes>True</XsdCodeGenImportXmlTypes>
+    <XsdCodeGenGenerateSerializableTypes>True</XsdCodeGenGenerateSerializableTypes>
+    <XsdCodeGenGenerateInternalTypes>False</XsdCodeGenGenerateInternalTypes>
+    <XsdCodeGenEnableDataBinding>False</XsdCodeGenEnableDataBinding>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -56,6 +67,10 @@
       <Project>{b883e88f-92ac-4704-abe8-d61d6a7372ba}</Project>
       <Name>ProjetDev.WCF.CommunicationParameters</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ProjetDev.WCF.BusinessAcess\ProjetDev.WCF.Business.csproj">
+      <Project>{F06C18BC-62D7-419A-893C-C4EE5DB8512C}</Project>
+      <Name>ProjetDev.WCF.Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RequestManagment\ProjetDev.WCF.RequestManagment.csproj">
       <Project>{e94431ec-ad58-4895-93a3-40444a1d62f6}</Project>
       <Name>ProjetDev.WCF.RequestManagment</Name>
@@ -72,7 +87,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{3D9AD99F-2412-4246-B90B-4EAA41C64699}">
         <WcfProjectProperties>
-          <AutoStart>True</AutoStart>
+          <AutoStart>False</AutoStart>
         </WcfProjectProperties>
       </FlavorProperties>
     </VisualStudio>

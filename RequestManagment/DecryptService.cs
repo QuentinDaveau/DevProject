@@ -22,7 +22,7 @@ namespace ProjetDev.WCF.RequestManagment
                 case "LogUser":
                     return LaunchDecrypt(message);
                 default:
-                    return MessageGenerator.GenerateError(message, $"Unrecognized operation name! {message.OperationName}");
+                    return MessageGenerator.GenerateError(message, $"Unrecognized operation name! {message.OperationName}", this.GetType().ToString());
             }
         }
 

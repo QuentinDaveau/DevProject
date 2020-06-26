@@ -1,4 +1,5 @@
-﻿using ProjetDev.WCF.CommunicationParameters;
+﻿using ProjetDev.WCF.BusinessAccess;
+using ProjetDev.WCF.CommunicationParameters;
 using ProjetDev.WCF.RequestManagment;
 using System;
 using System.Collections.Generic;
@@ -11,10 +12,13 @@ namespace ProjetDev.WCF.Service
 {
     public class RequestService : IRequestService
     {
+        private readonly BusinessAccessManager businessAccessManager;
         private readonly RequestManager requestManager;
-        public RequestService(RequestManager requestManager)
+
+        public RequestService()
         {
-            this.requestManager = requestManager;
+            businessAccessManager = new BusinessAccessManager();
+            requestManager = new RequestManager(businessAccessManager);
         }
 
 

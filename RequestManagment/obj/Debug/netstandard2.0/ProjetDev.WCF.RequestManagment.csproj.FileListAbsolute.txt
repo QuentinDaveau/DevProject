@@ -1,0 +1,14 @@
+C:\Users\davea\source\repos\ProjetDev\RequestManagment\bin\Debug\netstandard2.0\ProjetDev.WCF.RequestManagment.deps.json
+C:\Users\davea\source\repos\ProjetDev\RequestManagment\bin\Debug\netstandard2.0\ProjetDev.WCF.RequestManagment.dll
+C:\Users\davea\source\repos\ProjetDev\RequestManagment\bin\Debug\netstandard2.0\ProjetDev.WCF.RequestManagment.pdb
+C:\Users\davea\source\repos\ProjetDev\RequestManagment\bin\Debug\netstandard2.0\ProjetDev.WCF.Business.dll
+C:\Users\davea\source\repos\ProjetDev\RequestManagment\bin\Debug\netstandard2.0\ProjetDev.WCF.CommunicationParameters.dll
+C:\Users\davea\source\repos\ProjetDev\RequestManagment\bin\Debug\netstandard2.0\ProjetDev.WCF.CommunicationParameters.pdb
+C:\Users\davea\source\repos\ProjetDev\RequestManagment\bin\Debug\netstandard2.0\ProjetDev.WCF.Business.pdb
+C:\Users\davea\source\repos\ProjetDev\RequestManagment\obj\Debug\netstandard2.0\ProjetDev.WCF.RequestManagment.csprojAssemblyReference.cache
+C:\Users\davea\source\repos\ProjetDev\RequestManagment\obj\Debug\netstandard2.0\ProjetDev.WCF.RequestManagment.AssemblyInfoInputs.cache
+C:\Users\davea\source\repos\ProjetDev\RequestManagment\obj\Debug\netstandard2.0\ProjetDev.WCF.RequestManagment.AssemblyInfo.cs
+C:\Users\davea\source\repos\ProjetDev\RequestManagment\obj\Debug\netstandard2.0\ProjetDev.WCF.RequestManagment.csproj.CoreCompileInputs.cache
+C:\Users\davea\source\repos\ProjetDev\RequestManagment\obj\Debug\netstandard2.0\ProjetDev.WCF.RequestManagment.csproj.CopyComplete
+C:\Users\davea\source\repos\ProjetDev\RequestManagment\obj\Debug\netstandard2.0\ProjetDev.WCF.RequestManagment.dll
+C:\Users\davea\source\repos\ProjetDev\RequestManagment\obj\Debug\netstandard2.0\ProjetDev.WCF.RequestManagment.pdb

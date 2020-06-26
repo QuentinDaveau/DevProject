@@ -1,0 +1,10 @@
+C:\Users\davea\source\repos\ProjetDev\ProjetDev.WCF.Client\bin\Debug\ProjetDev.WCF.Client.exe.config
+C:\Users\davea\source\repos\ProjetDev\ProjetDev.WCF.Client\bin\Debug\ProjetDev.WCF.Client.exe
+C:\Users\davea\source\repos\ProjetDev\ProjetDev.WCF.Client\bin\Debug\ProjetDev.WCF.Client.pdb
+C:\Users\davea\source\repos\ProjetDev\ProjetDev.WCF.Client\bin\Debug\ProjetDev.WCF.CommunicationParameters.dll
+C:\Users\davea\source\repos\ProjetDev\ProjetDev.WCF.Client\bin\Debug\ProjetDev.WCF.CommunicationParameters.pdb
+C:\Users\davea\source\repos\ProjetDev\ProjetDev.WCF.Client\obj\Debug\ProjetDev.WCF.Client.csprojAssemblyReference.cache
+C:\Users\davea\source\repos\ProjetDev\ProjetDev.WCF.Client\obj\Debug\ProjetDev.WCF.Client.csproj.CoreCompileInputs.cache
+C:\Users\davea\source\repos\ProjetDev\ProjetDev.WCF.Client\obj\Debug\ProjetDev.WCF.Client.csproj.CopyComplete
+C:\Users\davea\source\repos\ProjetDev\ProjetDev.WCF.Client\obj\Debug\ProjetDev.WCF.Client.exe
+C:\Users\davea\source\repos\ProjetDev\ProjetDev.WCF.Client\obj\Debug\ProjetDev.WCF.Client.pdb

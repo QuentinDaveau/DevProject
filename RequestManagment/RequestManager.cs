@@ -14,10 +14,21 @@ namespace ProjetDev.WCF.RequestManagment
         public RequestManager(BusinessAccessManager businessAccessManager)
         {
             this.businessAccessManager = businessAccessManager;
+            loginService = new LoginService(businessAccessManager);
+            decryptService = new DecryptService(businessAccessManager);
+            completedDecryptionService = new CompletedDecryptionService(businessAccessManager);
         }
 
         public Msg ProcessMessage(Msg message)
         {
+            if (message.OperationType != "Login")
+            {
+                if (!loginService.ProcessMessage(MessageGenerator.SetOperation(message, "CheckToken")).StatutOp)
+                {
+                    return MessageGenerator.GenerateError(message, "Invalid user token!", this.GetType().ToString());
+                }
+            }
+
             switch (message.OperationType)
             {
                 case "Login":
@@ -27,7 +38,7 @@ namespace ProjetDev.WCF.RequestManagment
                 case "DecryptDone":
                     return completedDecryptionService.ProcessMessage(message);
                 default:
-                    return MessageGenerator.GenerateError(message, "Unrecognized operation type!");
+                    return MessageGenerator.GenerateError(message, "Unrecognized operation type!", this.GetType().ToString());
             }
         }
     }

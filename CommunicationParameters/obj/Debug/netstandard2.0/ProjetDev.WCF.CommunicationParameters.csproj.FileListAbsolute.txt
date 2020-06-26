@@ -1,0 +1,9 @@
+C:\Users\davea\source\repos\ProjetDev\CommunicationParameters\bin\Debug\netstandard2.0\ProjetDev.WCF.CommunicationParameters.deps.json
+C:\Users\davea\source\repos\ProjetDev\CommunicationParameters\bin\Debug\netstandard2.0\ProjetDev.WCF.CommunicationParameters.dll
+C:\Users\davea\source\repos\ProjetDev\CommunicationParameters\bin\Debug\netstandard2.0\ProjetDev.WCF.CommunicationParameters.pdb
+C:\Users\davea\source\repos\ProjetDev\CommunicationParameters\obj\Debug\netstandard2.0\ProjetDev.WCF.CommunicationParameters.csprojAssemblyReference.cache
+C:\Users\davea\source\repos\ProjetDev\CommunicationParameters\obj\Debug\netstandard2.0\ProjetDev.WCF.CommunicationParameters.AssemblyInfoInputs.cache
+C:\Users\davea\source\repos\ProjetDev\CommunicationParameters\obj\Debug\netstandard2.0\ProjetDev.WCF.CommunicationParameters.AssemblyInfo.cs
+C:\Users\davea\source\repos\ProjetDev\CommunicationParameters\obj\Debug\netstandard2.0\ProjetDev.WCF.CommunicationParameters.csproj.CoreCompileInputs.cache
+C:\Users\davea\source\repos\ProjetDev\CommunicationParameters\obj\Debug\netstandard2.0\ProjetDev.WCF.CommunicationParameters.dll
+C:\Users\davea\source\repos\ProjetDev\CommunicationParameters\obj\Debug\netstandard2.0\ProjetDev.WCF.CommunicationParameters.pdb

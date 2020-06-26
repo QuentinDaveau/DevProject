@@ -23,22 +23,21 @@ namespace ProjetDev.WCF.RequestManagment
             {
                 case "LogUser":
                     return LogUser(message);
+                case "CheckToken":
+                    return CheckToken(message);
                 default:
-                    return MessageGenerator.GenerateError(message, $"Unrecognized operation name! {message.OperationName}");
+                    return MessageGenerator.GenerateError(message, $"Unrecognized operation name! {message.OperationName}", this.GetType().ToString());
             }
         }
 
         private Msg LogUser(Msg message)
         {
-            // Opérations de login
+            return businessAccessManager.ProcessMessage(message);
+        }
 
-            businessAccessManager.ProcessMessage(message);
-
-            // Opération 2...
-            businessAccessManager.ProcessMessage(message);
-
-
-            return message;
+        private Msg CheckToken(Msg message)
+        {
+            return businessAccessManager.ProcessMessage(message);
         }
     }
 }

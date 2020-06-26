@@ -4,6 +4,8 @@ using ProjetDev.WCF.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ServiceModel;
+using System.ServiceModel.Description;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,10 +15,32 @@ namespace ProjetDev.WCF.Server
     {
         static void Main(string[] args)
         {
-            BusinessAccessManager businessAccessManager = new BusinessAccessManager();
-            RequestManager requestManager = new RequestManager(businessAccessManager);
-            RequestService requestService = new RequestService(requestManager);
-            
+            Uri baseAddress = new Uri("http://localhost:8000/ProjetDev.WCF.Service/");
+
+            ServiceHost host = new ServiceHost(typeof(RequestService));
+
+            try
+            {
+                host.AddServiceEndpoint(typeof(IRequestService), new BasicHttpBinding(), baseAddress + "RequestService/");
+
+                ServiceMetadataBehavior smb = new ServiceMetadataBehavior();
+                smb.HttpGetEnabled = true;
+                smb.HttpGetUrl = new Uri("http://localhost:8000/ProjetDev.WCF.Service/RequestService/");
+                host.Description.Behaviors.Add(smb);
+
+
+                host.Open();
+                Console.WriteLine("Started host succesfully!");
+                Console.WriteLine("Press enter to exit application");
+                Console.ReadLine();
+                host.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Exception: {e.Message}");
+                host.Abort();
+            }
+            Console.ReadLine();
         }
     }
 }

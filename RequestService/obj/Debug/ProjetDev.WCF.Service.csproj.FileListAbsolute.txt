@@ -1,0 +1,14 @@
+C:\Users\davea\source\repos\ProjetDev\RequestService\bin\Debug\ProjetDev.WCF.Service.dll.config
+C:\Users\davea\source\repos\ProjetDev\RequestService\bin\Debug\ProjetDev.WCF.Service.dll
+C:\Users\davea\source\repos\ProjetDev\RequestService\bin\Debug\ProjetDev.WCF.Service.pdb
+C:\Users\davea\source\repos\ProjetDev\RequestService\bin\Debug\ProjetDev.WCF.CommunicationParameters.dll
+C:\Users\davea\source\repos\ProjetDev\RequestService\bin\Debug\ProjetDev.WCF.RequestManagment.dll
+C:\Users\davea\source\repos\ProjetDev\RequestService\bin\Debug\ProjetDev.WCF.Business.dll
+C:\Users\davea\source\repos\ProjetDev\RequestService\bin\Debug\ProjetDev.WCF.CommunicationParameters.pdb
+C:\Users\davea\source\repos\ProjetDev\RequestService\bin\Debug\ProjetDev.WCF.RequestManagment.pdb
+C:\Users\davea\source\repos\ProjetDev\RequestService\bin\Debug\ProjetDev.WCF.Business.pdb
+C:\Users\davea\source\repos\ProjetDev\RequestService\obj\Debug\ProjetDev.WCF.Service.csprojAssemblyReference.cache
+C:\Users\davea\source\repos\ProjetDev\RequestService\obj\Debug\ProjetDev.WCF.Service.csproj.CoreCompileInputs.cache
+C:\Users\davea\source\repos\ProjetDev\RequestService\obj\Debug\ProjetDev.WCF.Service.csproj.CopyComplete
+C:\Users\davea\source\repos\ProjetDev\RequestService\obj\Debug\ProjetDev.WCF.Service.dll
+C:\Users\davea\source\repos\ProjetDev\RequestService\obj\Debug\ProjetDev.WCF.Service.pdb

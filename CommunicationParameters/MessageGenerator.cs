@@ -47,11 +47,39 @@ namespace ProjetDev.WCF.CommunicationParameters
             return newMessage;
         }
 
-        public static Msg GenerateError(Msg sourceMessage, string errorInfo)
+        public static Msg GenerateError(Msg sourceMessage, string errorInfo, string sourceClassName)
         {
             Msg newMessage = sourceMessage;
             newMessage.StatutOp = false;
-            newMessage.Info = errorInfo;
+            newMessage.Info = $"{sourceClassName}: {errorInfo}";
+            return newMessage;
+        }
+
+        public static Msg SetOperation(Msg sourceMessage, string operationName)
+        {
+            Msg newMessage = sourceMessage;
+            newMessage.OperationName = operationName;
+            return newMessage;
+        }
+
+        public static Msg SetData(Msg sourceMessage, object[] data)
+        {
+            Msg newMessage = sourceMessage;
+            newMessage.Data = data;
+            return newMessage;
+        }
+
+        public static Msg SetInfo(Msg sourceMessage, string info)
+        {
+            Msg newMessage = sourceMessage;
+            newMessage.Info = info;
+            return newMessage;
+        }
+
+        public static Msg Validate(Msg sourceMessage)
+        {
+            Msg newMessage = sourceMessage;
+            newMessage.StatutOp = true;
             return newMessage;
         }
     }

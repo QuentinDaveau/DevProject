@@ -1,0 +1,12 @@
+C:\Users\davea\source\repos\ProjetDev\ProjetDev.WCF.BusinessAcess\bin\Debug\netstandard2.0\ProjetDev.WCF.Business.deps.json
+C:\Users\davea\source\repos\ProjetDev\ProjetDev.WCF.BusinessAcess\bin\Debug\netstandard2.0\ProjetDev.WCF.Business.dll
+C:\Users\davea\source\repos\ProjetDev\ProjetDev.WCF.BusinessAcess\bin\Debug\netstandard2.0\ProjetDev.WCF.Business.pdb
+C:\Users\davea\source\repos\ProjetDev\ProjetDev.WCF.BusinessAcess\bin\Debug\netstandard2.0\ProjetDev.WCF.CommunicationParameters.dll
+C:\Users\davea\source\repos\ProjetDev\ProjetDev.WCF.BusinessAcess\bin\Debug\netstandard2.0\ProjetDev.WCF.CommunicationParameters.pdb
+C:\Users\davea\source\repos\ProjetDev\ProjetDev.WCF.BusinessAcess\obj\Debug\netstandard2.0\ProjetDev.WCF.Business.csprojAssemblyReference.cache
+C:\Users\davea\source\repos\ProjetDev\ProjetDev.WCF.BusinessAcess\obj\Debug\netstandard2.0\ProjetDev.WCF.Business.AssemblyInfoInputs.cache
+C:\Users\davea\source\repos\ProjetDev\ProjetDev.WCF.BusinessAcess\obj\Debug\netstandard2.0\ProjetDev.WCF.Business.AssemblyInfo.cs
+C:\Users\davea\source\repos\ProjetDev\ProjetDev.WCF.BusinessAcess\obj\Debug\netstandard2.0\ProjetDev.WCF.Business.csproj.CoreCompileInputs.cache
+C:\Users\davea\source\repos\ProjetDev\ProjetDev.WCF.BusinessAcess\obj\Debug\netstandard2.0\ProjetDev.WCF.Business.csproj.CopyComplete
+C:\Users\davea\source\repos\ProjetDev\ProjetDev.WCF.BusinessAcess\obj\Debug\netstandard2.0\ProjetDev.WCF.Business.dll
+C:\Users\davea\source\repos\ProjetDev\ProjetDev.WCF.BusinessAcess\obj\Debug\netstandard2.0\ProjetDev.WCF.Business.pdb

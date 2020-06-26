@@ -11,7 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetDev.WCF.Server", "Pro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjetDev.WCF.Business", "ProjetDev.WCF.BusinessAcess\ProjetDev.WCF.Business.csproj", "{F06C18BC-62D7-419A-893C-C4EE5DB8512C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetDev.WCF.CommunicationParameters", "CommunicationParameters\ProjetDev.WCF.CommunicationParameters.csproj", "{B883E88F-92AC-4704-ABE8-D61D6A7372BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjetDev.WCF.CommunicationParameters", "CommunicationParameters\ProjetDev.WCF.CommunicationParameters.csproj", "{B883E88F-92AC-4704-ABE8-D61D6A7372BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetDev.WCF.Client", "ProjetDev.WCF.Client\ProjetDev.WCF.Client.csproj", "{7B3BBADD-088D-4BA6-B8C1-244517938199}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{B883E88F-92AC-4704-ABE8-D61D6A7372BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B883E88F-92AC-4704-ABE8-D61D6A7372BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B883E88F-92AC-4704-ABE8-D61D6A7372BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B3BBADD-088D-4BA6-B8C1-244517938199}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B3BBADD-088D-4BA6-B8C1-244517938199}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B3BBADD-088D-4BA6-B8C1-244517938199}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B3BBADD-088D-4BA6-B8C1-244517938199}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
