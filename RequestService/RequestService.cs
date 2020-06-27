@@ -10,6 +10,7 @@ using System.Text;
 
 namespace ProjetDev.WCF.Service
 {
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerSession)]
     public class RequestService : IRequestService
     {
         private readonly BusinessAccessManager businessAccessManager;

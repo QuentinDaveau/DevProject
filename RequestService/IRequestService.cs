@@ -8,7 +8,7 @@ using System.Text;
 
 namespace ProjetDev.WCF.Service
 {
-    [ServiceContract(Namespace = "http://ProjetDev.WCF.Service")]
+    [ServiceContract(Namespace = "http://ProjetDev.WCF.Service", SessionMode = SessionMode.Required)]
     public interface IRequestService
     {
         [OperationContract]

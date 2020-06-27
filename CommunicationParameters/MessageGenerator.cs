@@ -10,7 +10,7 @@ namespace ProjetDev.WCF.CommunicationParameters
     {
         public static Msg UpdateMessage(Msg sourceMessage, Dictionary<string, object> paramsToChange)
         {
-            Msg newMessage = sourceMessage;
+            Msg newMessage = CopyMessage(sourceMessage);
             foreach (KeyValuePair<string, object> pair in paramsToChange)
             {
                 switch(pair.Key)
@@ -49,7 +49,7 @@ namespace ProjetDev.WCF.CommunicationParameters
 
         public static Msg GenerateError(Msg sourceMessage, string errorInfo, string sourceClassName)
         {
-            Msg newMessage = sourceMessage;
+            Msg newMessage = CopyMessage(sourceMessage);
             newMessage.StatutOp = false;
             newMessage.Info = $"{sourceClassName}: {errorInfo}";
             return newMessage;
@@ -57,29 +57,46 @@ namespace ProjetDev.WCF.CommunicationParameters
 
         public static Msg SetOperation(Msg sourceMessage, string operationName)
         {
-            Msg newMessage = sourceMessage;
+            Msg newMessage = CopyMessage(sourceMessage);
             newMessage.OperationName = operationName;
             return newMessage;
         }
 
         public static Msg SetData(Msg sourceMessage, object[] data)
         {
-            Msg newMessage = sourceMessage;
+            Msg newMessage = CopyMessage(sourceMessage);
             newMessage.Data = data;
             return newMessage;
         }
 
         public static Msg SetInfo(Msg sourceMessage, string info)
         {
-            Msg newMessage = sourceMessage;
+            Msg newMessage = CopyMessage(sourceMessage);
             newMessage.Info = info;
             return newMessage;
         }
 
         public static Msg Validate(Msg sourceMessage)
         {
-            Msg newMessage = sourceMessage;
+            Msg newMessage = CopyMessage(sourceMessage);
             newMessage.StatutOp = true;
+            return newMessage;
+        }
+
+        private static Msg CopyMessage(Msg message)
+        {
+            Msg newMessage = new Msg()
+            {
+                StatutOp = message.StatutOp,
+                Info = message.Info,
+                Data = message.Data,
+                OperationName = message.OperationName,
+                TokenApp = message.TokenApp,
+                TokenUser = message.TokenUser,
+                AppVersion = message.AppVersion,
+                OperationVersion = message.OperationVersion,
+                OperationType = message.OperationType
+            };
             return newMessage;
         }
     }

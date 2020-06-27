@@ -8,38 +8,38 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProjetDev.WCF.Client
+namespace ProjetDev.WCF.CommunicationParameters
 {
     using System.Runtime.Serialization;
-    
-    
+
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Msg", Namespace="http://schemas.datacontract.org/2004/07/ProjetDev.WCF.CommunicationParameters")]
+    [System.Runtime.Serialization.DataContractAttribute(Name = "Msg", Namespace = "http://schemas.datacontract.org/2004/07/ProjetDev.WCF.CommunicationParameters")]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[]))]
     public partial class Msg : object, System.Runtime.Serialization.IExtensibleDataObject
     {
-        
+
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
+
         private string AppVersionField;
-        
+
         private object[] DataField;
-        
+
         private string InfoField;
-        
+
         private string OperationNameField;
-        
+
         private string OperationTypeField;
-        
+
         private string OperationVersionField;
-        
+
         private bool StatutOpField;
-        
+
         private string TokenAppField;
-        
+
         private string TokenUserField;
-        
+
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData
         {
             get
@@ -51,7 +51,7 @@ namespace ProjetDev.WCF.Client
                 this.extensionDataField = value;
             }
         }
-        
+
         [System.Runtime.Serialization.DataMemberAttribute()]
         public string AppVersion
         {
@@ -64,7 +64,7 @@ namespace ProjetDev.WCF.Client
                 this.AppVersionField = value;
             }
         }
-        
+
         [System.Runtime.Serialization.DataMemberAttribute()]
         public object[] Data
         {
@@ -77,7 +77,7 @@ namespace ProjetDev.WCF.Client
                 this.DataField = value;
             }
         }
-        
+
         [System.Runtime.Serialization.DataMemberAttribute()]
         public string Info
         {
@@ -90,7 +90,7 @@ namespace ProjetDev.WCF.Client
                 this.InfoField = value;
             }
         }
-        
+
         [System.Runtime.Serialization.DataMemberAttribute()]
         public string OperationName
         {
@@ -103,7 +103,7 @@ namespace ProjetDev.WCF.Client
                 this.OperationNameField = value;
             }
         }
-        
+
         [System.Runtime.Serialization.DataMemberAttribute()]
         public string OperationType
         {
@@ -116,7 +116,7 @@ namespace ProjetDev.WCF.Client
                 this.OperationTypeField = value;
             }
         }
-        
+
         [System.Runtime.Serialization.DataMemberAttribute()]
         public string OperationVersion
         {
@@ -129,7 +129,7 @@ namespace ProjetDev.WCF.Client
                 this.OperationVersionField = value;
             }
         }
-        
+
         [System.Runtime.Serialization.DataMemberAttribute()]
         public bool StatutOp
         {
@@ -142,7 +142,7 @@ namespace ProjetDev.WCF.Client
                 this.StatutOpField = value;
             }
         }
-        
+
         [System.Runtime.Serialization.DataMemberAttribute()]
         public string TokenApp
         {
@@ -155,7 +155,7 @@ namespace ProjetDev.WCF.Client
                 this.TokenAppField = value;
             }
         }
-        
+
         [System.Runtime.Serialization.DataMemberAttribute()]
         public string TokenUser
         {
@@ -173,14 +173,14 @@ namespace ProjetDev.WCF.Client
 
 
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ServiceModel.ServiceContractAttribute(Namespace="http://ProjetDev.WCF.Service", ConfigurationName="IRequestService")]
+[System.ServiceModel.ServiceContractAttribute(Namespace = "http://ProjetDev.WCF.Service", ConfigurationName = "IRequestService", SessionMode = System.ServiceModel.SessionMode.Required)]
 public interface IRequestService
 {
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://ProjetDev.WCF.Service/IRequestService/Request", ReplyAction="http://ProjetDev.WCF.Service/IRequestService/RequestResponse")]
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://ProjetDev.WCF.Service/IRequestService/Request", ReplyAction = "http://ProjetDev.WCF.Service/IRequestService/RequestResponse")]
     ProjetDev.WCF.CommunicationParameters.Msg Request(ProjetDev.WCF.CommunicationParameters.Msg message);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://ProjetDev.WCF.Service/IRequestService/Request", ReplyAction="http://ProjetDev.WCF.Service/IRequestService/RequestResponse")]
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://ProjetDev.WCF.Service/IRequestService/Request", ReplyAction = "http://ProjetDev.WCF.Service/IRequestService/RequestResponse")]
     System.Threading.Tasks.Task<ProjetDev.WCF.CommunicationParameters.Msg> RequestAsync(ProjetDev.WCF.CommunicationParameters.Msg message);
 }
 
@@ -193,36 +193,36 @@ public interface IRequestServiceChannel : IRequestService, System.ServiceModel.I
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
 public partial class RequestServiceClient : System.ServiceModel.ClientBase<IRequestService>, IRequestService
 {
-    
+
     public RequestServiceClient()
     {
     }
-    
-    public RequestServiceClient(string endpointConfigurationName) : 
+
+    public RequestServiceClient(string endpointConfigurationName) :
             base(endpointConfigurationName)
     {
     }
-    
-    public RequestServiceClient(string endpointConfigurationName, string remoteAddress) : 
+
+    public RequestServiceClient(string endpointConfigurationName, string remoteAddress) :
             base(endpointConfigurationName, remoteAddress)
     {
     }
-    
-    public RequestServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+    public RequestServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) :
             base(endpointConfigurationName, remoteAddress)
     {
     }
-    
-    public RequestServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+    public RequestServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
             base(binding, remoteAddress)
     {
     }
-    
+
     public ProjetDev.WCF.CommunicationParameters.Msg Request(ProjetDev.WCF.CommunicationParameters.Msg message)
     {
         return base.Channel.Request(message);
     }
-    
+
     public System.Threading.Tasks.Task<ProjetDev.WCF.CommunicationParameters.Msg> RequestAsync(ProjetDev.WCF.CommunicationParameters.Msg message)
     {
         return base.Channel.RequestAsync(message);

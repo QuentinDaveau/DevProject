@@ -19,7 +19,7 @@ namespace ProjetDev.WCF.RequestManagment
         {
             switch (message.OperationName)
             {
-                case "LogUser":
+                case "DecryptFile":
                     return LaunchDecrypt(message);
                 default:
                     return MessageGenerator.GenerateError(message, $"Unrecognized operation name! {message.OperationName}", this.GetType().ToString());
@@ -28,10 +28,7 @@ namespace ProjetDev.WCF.RequestManagment
 
         private Msg LaunchDecrypt(Msg message)
         {
-            // Opération 1...
-            businessAccessManager.ProcessMessage(message);
-
-            return message;
+            return businessAccessManager.ProcessMessage(message);
         }
     }
 }

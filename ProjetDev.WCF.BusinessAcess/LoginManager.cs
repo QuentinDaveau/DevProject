@@ -8,11 +8,12 @@ namespace ProjetDev.WCF.Business
     public class LoginManager : IMessageReceiver
     {
         private QueryManager queryManager;
-        private List<string> tokens = new List<string>();
+        private List<string> tokens;
 
         public LoginManager(QueryManager queryManager)
         {
             this.queryManager = queryManager;
+            tokens = new List<string>();
         }
 
         public Msg ProcessMessage(Msg message)

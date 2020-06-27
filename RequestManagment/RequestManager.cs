@@ -23,9 +23,10 @@ namespace ProjetDev.WCF.RequestManagment
         {
             if (message.OperationType != "Login")
             {
-                if (!loginService.ProcessMessage(MessageGenerator.SetOperation(message, "CheckToken")).StatutOp)
+                Msg tokenCheck = loginService.ProcessMessage(MessageGenerator.SetOperation(message, "CheckToken"));
+                if (!tokenCheck.StatutOp)
                 {
-                    return MessageGenerator.GenerateError(message, "Invalid user token!", this.GetType().ToString());
+                    return tokenCheck;
                 }
             }
 

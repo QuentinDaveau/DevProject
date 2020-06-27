@@ -15,18 +15,21 @@ namespace ProjetDev.WCF.Server
     {
         static void Main(string[] args)
         {
-            Uri baseAddress = new Uri("http://localhost:8000/ProjetDev.WCF.Service/");
+            Uri baseAddress = new Uri("net.tcp://localhost:8000/ProjetDev.WCF.Service/");
 
             ServiceHost host = new ServiceHost(typeof(RequestService));
 
             try
             {
-                host.AddServiceEndpoint(typeof(IRequestService), new BasicHttpBinding(), baseAddress + "RequestService/");
+                host.AddServiceEndpoint(typeof(IRequestService), new NetTcpBinding(), baseAddress + "RequestService/");
 
                 ServiceMetadataBehavior smb = new ServiceMetadataBehavior();
                 smb.HttpGetEnabled = true;
-                smb.HttpGetUrl = new Uri("http://localhost:8000/ProjetDev.WCF.Service/RequestService/");
+                smb.HttpGetUrl = new Uri("http://localhost:8001/ProjetDev.WCF.Service/RequestService/");
                 host.Description.Behaviors.Add(smb);
+
+                host.AddServiceEndpoint(ServiceMetadataBehavior.MexContractName, MetadataExchangeBindings.CreateMexHttpBinding(), "http://localhost:8001/ProjetDev.WCF.Service/RequestService/");
+                
 
 
                 host.Open();
